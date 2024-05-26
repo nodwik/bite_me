@@ -23,4 +23,8 @@ def gen_key(parts: int = 4, chars_per_part: int = 8) -> str:
             password += '-'
     return password
 
+    # different solution
+    # parts_list = [''.join(secrets.choice(alphabet) for _ in range(chars_per_part)) for _ in range(parts)]
+    # return '-'.join(parts_list)
+
 print(gen_key(parts=3, chars_per_part=4))
