@@ -1,14 +1,6 @@
 import string
 import secrets
 
-alphabet = string.ascii_uppercase + string.digits
-print(secrets.choice(alphabet))
-part = ''
-for i in range(8):
-    part += secrets.choice(alphabet)
-print(part)
-
-
 def gen_key(parts: int = 4, chars_per_part: int = 8) -> str:
     """
     Generate and return a random license key containing
