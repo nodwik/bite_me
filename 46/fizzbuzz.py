@@ -12,3 +12,15 @@ def fizzbuzz(num: int) -> Union[str, int]:
         return num
 
 print(fizzbuzz(23))
+
+# another possibility:
+
+from typing import Union
+
+def fizzbuzz2(num: int) -> Union[str, int]:
+    result = ""
+    if num % 3 == 0:
+        result += "Fizz"
+    if num % 5 == 0:
+        result += "Buzz"
+    return result if result else num
