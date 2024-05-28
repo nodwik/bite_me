@@ -16,3 +16,4 @@ def get_days_between_pb_start_first_joint_pycon():
     """Return the int number of days"""
     return (pycon_date - pybites_founded).days
 
+
