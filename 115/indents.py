@@ -20,5 +20,5 @@ The takewhile function takes two arguments:
 The takewhile function creates an iterator that yields items from the iterable as long as the predicate function returns True. As soon as the predicate function returns False for an item, takewhile stops iterating.
 
 '''
-from itertools import takewhile
-leading_space = [space for space in takewhile(lambda x: x == ' ', text)]
+#from itertools import takewhile
+#leading_space = [space for space in takewhile(lambda x: x == ' ', text)]
