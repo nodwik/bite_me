@@ -10,10 +10,13 @@ def get_person_age(name):
        If name in > 1 dict, return the match of the group with
        greatest N (so group3 > group2 > group1)
     """
+    name = str(name).lower()
+
     if name is None:
         return NOT_FOUND
+    elif name is False:
+        return NOT_FOUND
 
-    name = name.lower()
     my_dict = [group1, group2, group3]
     found_age = []
     for group in reversed(my_dict):
@@ -26,4 +29,5 @@ def get_person_age(name):
     else:
         return NOT_FOUND
 
-get_person_age('ana')
+result = get_person_age(-1)
+print(result)
