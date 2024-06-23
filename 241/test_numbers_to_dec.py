@@ -9,7 +9,7 @@ test_sample = {
     's4' : ([6, 2, True], 'TypeError'),
     's5' : ([-3, 12], 'ValueError'),
     's6' : ([3.6, 4, 1], 'TypeError'),
-    's7' : (['4', 5, 3, 1], 'TypeError')
+    's7' : (['4', 5, 3, 1], 'TypeError'),
     's8' : ([12], 'ValueError'),
 }
 def test_numbers_to_dec():
